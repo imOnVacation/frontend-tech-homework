@@ -12,7 +12,7 @@
 8. flex-direction: row-reverse;
 9. flex-direction: column;
 10. flex-direction: row-reverse;
-    tify-content: start;
+    justify-content: start;
 11. flex-direction: column;
     justify-content: end;
 12. flex-direction: column-reverse;

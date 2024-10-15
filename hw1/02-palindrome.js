@@ -16,7 +16,7 @@ function handleInput() {
     return;
   }
 
-  // Check if the input is a positive number
+  // Check if the input is a negative number
   if (numValue < 0) {
     errorElem.style.color = 'red';
     elem.style.borderColor = 'red';

@@ -2,11 +2,14 @@ const elem = document.querySelector('input');
 const errorElem = document.querySelector('.inputError');
 const resultElem = document.querySelector('.displayResult');
 
-elem.addEventListener('input', handleInput);
+function isPalindrome(number) {
+  const str = number.toString();
+  const reversedStr = str.split('').reverse().join('');
+  return str === reversedStr;
+}
 
 function handleInput() {
   const inputValue = elem.value;
-  const numValue = Number(inputValue);
 
   // Clear the error and border when input is empty
   if (!inputValue) {
@@ -17,7 +20,7 @@ function handleInput() {
   }
 
   // Check if the input is a negative number
-  if (numValue < 0) {
+  if (inputValue < 0) {
     errorElem.style.color = 'red';
     elem.style.borderColor = 'red';
     errorElem.textContent = 'Enter a valid positive number.';
@@ -38,8 +41,4 @@ function handleInput() {
   }
 }
 
-function isPalindrome(number) {
-  const str = number.toString();
-  const reversedStr = str.split('').reverse().join('');
-  return str === reversedStr;
-}
+elem.addEventListener('input', handleInput);

@@ -9,6 +9,7 @@ function handleSearch() {
   cardsContainer.innerHTML = '';
 
   // Filter the data based on the search input
+  // eslint-disable-next-line no-undef
   const filteredData = characters.filter((item) =>
     item.name.toLowerCase().includes(keyword)
   );

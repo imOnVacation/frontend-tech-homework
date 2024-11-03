@@ -8,6 +8,12 @@ function handleSearch() {
   // Clear previous results
   cardsContainer.innerHTML = '';
 
+  if (!keyword) {
+    cardsContainer.innerHTML =
+      '<p class="text-center">Enter a valid character name</p>';
+    return;
+  }
+
   // Filter the data based on the search input
   // eslint-disable-next-line no-undef
   const filteredData = characters.filter((item) =>

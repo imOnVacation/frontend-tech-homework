@@ -28,6 +28,7 @@ const handleClick = (() => {
     } else {
       clearInterval(intervalId);
       button.value = 'Start';
+      button.classList.remove('btn-danger');
     }
     isRunning = !isRunning;
   };

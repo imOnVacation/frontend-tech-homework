@@ -1,0 +1,30 @@
+{
+  "name": "frontend-tech",
+  "version": "1.0.0",
+  "description": "In this repository, you will find the starter files for the homework assignments for CS 464P/564: Front End Web Technologies.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imOnVacation/frontend-tech-homework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imOnVacation/frontend-tech-homework/issues"
+  },
+  "homepage": "https://github.com/imOnVacation/frontend-tech-homework#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
+    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "globals": "^15.11.0"
+  }
+}
